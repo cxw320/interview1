@@ -8,11 +8,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
    // final wordPair = WordPair.random();
     return MaterialApp(
-      title: 'Welcome to Flutter',
+    title: 'Startup Name Generator',
+      theme: ThemeData(
+        primaryColor: Colors.purple,
+      ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Startup Name Generator'),
-        ),
+
         body: Center(
           //child: Text(wordPair.asPascalCase),
           child:RandomWords(),
@@ -23,16 +24,52 @@ class MyApp extends StatelessWidget {
 }
 // create a minimal state class
 class RandomWordsState extends State<RandomWords> { //maintains state for widget
-  //add suggestions list and font var
-  final _suggestions = <WordPair>[]; // an underscore enforces privacy in dart
-  final _biggerFont = const TextStyle(fontSize: 18.0);
+  //add suggestions list and font var // stores
+  final List<WordPair> _suggestions = <WordPair>[];
+  final Set<WordPair> _saved = Set<WordPair>();   // Add this line.
+  final TextStyle _biggerFont = TextStyle(fontSize: 18.0);
   //add build() method
+
+  void _pushSaved() {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(   // Add 20 lines from here...
+        builder: (BuildContext context) {
+          final Iterable<ListTile> tiles = _saved.map(
+                (WordPair pair) {
+              return ListTile(
+                title: Text(
+                  pair.asPascalCase,
+                  style: _biggerFont,
+                ),
+              );
+            },
+          );
+          final List<Widget> divided = ListTile
+              .divideTiles(
+            context: context,
+            tiles: tiles,
+          )
+              .toList();
+          return Scaffold(
+            appBar: AppBar(
+              title: Text('Saved Suggestions'),
+            ),
+            body: ListView(children: divided),
+          );
+        },
+      ),
+    );
+  }
+
   @override
-
-
   Widget build(BuildContext context) {
-    final wordPair = WordPair.random();
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Startup Name Generator'),
+        actions: <Widget>[      // Add 3 lines from here...
+          IconButton(icon: Icon(Icons.list), onPressed: _pushSaved),
+        ],                      // ... to here.
+      ),
       body: _buildSuggestions(),
     );
   }
@@ -51,11 +88,25 @@ class RandomWordsState extends State<RandomWords> { //maintains state for widget
   }
 
   Widget _buildRow(WordPair pair) {
+    final bool alreadySaved = _saved.contains(pair);
     return ListTile(
       title: Text(
         pair.asPascalCase,
         style: _biggerFont,
       ),
+      trailing: Icon(
+        alreadySaved ? Icons.favorite : Icons.favorite_border,
+        color: alreadySaved ? Colors.red : null,
+      ),
+      onTap: () {
+        setState(() { //triggers build method
+          if (alreadySaved) {
+            _saved.remove(pair);
+          } else {
+            _saved.add(pair);
+          }
+            });
+      },
     );
   }
 }
