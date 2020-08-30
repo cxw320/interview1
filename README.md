@@ -24,7 +24,7 @@ As the first step in your interview, we ask that you be able to run this project
 You will be asked to show your simulators running this application at the start of your interview before proceeding to the next step.
 
 
-Part Two of your interivew will be based on a series of questions relating to common problems faced in dart/flutter cross-platform development.
+Part Two of your interivew will be based on a series of questions relating to common problems faced in Dart/Flutter Cross-Platform development.
 We will walk through a simple flutter application in real time for Part Two of your interview. 
 
 
