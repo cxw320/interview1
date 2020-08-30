@@ -95,7 +95,10 @@ class RandomWordsState extends State<RandomWords> { //maintains state for widget
         style: _biggerFont,
       ),
       trailing: Icon(
-        alreadySaved ? Icons.favorite : Icons.favorite_border,
+        alreadySaved ? 
+        Icons.favorite 
+        : 
+        Icons.favorite_border,
         color: alreadySaved ? Colors.red : null,
       ),
       onTap: () {
