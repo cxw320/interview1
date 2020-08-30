@@ -56,20 +56,20 @@ It depends on one dart package that can be found here:
 
 At this stage of your interview, we will go through common issues that arise in flutter cross-platform development and try to solve these problems together to get the application running, change some requirements, refactor some code, and if time allows - add a new feature. 
 
-A. Debugging and fixing errors
--Fix the three errors in the terminal to get the application to build
+A. Debugging and fixing errors:
+- Fix the three errors in the terminal to get the application to build
 
-B. Changing requirements
--We no longer want pasqual case but instead, we want the two words to be separated with a space in between, how can we separate the words to read "name name" instead of "NameName" ?
--We now want to add the words "of the" in between the two generated words so that it reads "name of the name", how can we change the string to output like this instead?
--We want to make sure that the words are being saved to our list correctly, if we go to the saved list does the format match the format on the like page?
--Refactoring: Can we make our code cleaner? How would we make a function that will formatName for us so we can extract it from the main widget
+B. Changing requirements:
+- We no longer want pasqual case but instead, we want the two words to be separated with a space in between, how can we separate the words to read "name name" instead of "NameName" ?
+- We now want to add the words "of the" in between the two generated words so that it reads "name of the name", how can we change the string to output like this instead?
+- We want to make sure that the words are being saved to our list correctly, if we go to the saved list does the format match the format on the like page?
+- Refactoring: Can we make our code cleaner? How would we make a function that will formatName for us so we can extract it from the main widget
 
 C. Special Feature
--We want the heart to play a sound when the user presses it. It just so happens that we've already found a dart package that allows playing sounds in Flutter.
+- We want the heart to play a sound when the user presses it. It just so happens that we've already found a dart package that allows playing sounds in Flutter.
 [audio_players](https://pub.dev/packages/audioplayers)
--We already loaded the .wav sound file we would like to play into our pubspec.yaml assets but haven't been able to make the heart play a sound on press. 
--After taking a look at the audio_player api documentation, can we figure out how to make the heart play a sound every time it is tapped?
+- We already loaded the .wav sound file we would like to play into our pubspec.yaml assets but haven't been able to make the heart play a sound on press. 
+- After taking a look at the audio_player api documentation, can we figure out how to make the heart play a sound every time it is tapped?
 
 
 
