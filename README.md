@@ -52,7 +52,7 @@ After you have shown the "Test Drive" app running locally to the interviewer, he
 
 This is a very basic flutter application that generates word pairs to come up with startup names. 
 It depends on one dart package that can be found here:
-[english_words](https://pub.dev/documentation/english_words/latest/index.html)
+Documentation: [english_words](https://pub.dev/documentation/english_words/latest/index.html)
 
 At this stage of your interview, we will go through common issues that arise in flutter cross-platform development and try to solve these problems together to get the application running, change some requirements, refactor some code, and if time allows - add a new feature. 
 
@@ -67,7 +67,7 @@ B. Changing requirements:
 
 C. Special Feature
 - We want the heart to play a sound when the user presses it. It just so happens that we've already found a dart package that allows playing sounds in Flutter.
-[audio_players](https://pub.dev/packages/audioplayers)
+Documentation: [audio_players](https://pub.dev/packages/audioplayers)
 - We already loaded the .wav sound file we would like to play into our pubspec.yaml assets but haven't been able to make the heart play a sound on press. 
 - After taking a look at the audio_player api documentation, can we figure out how to make the heart play a sound every time it is tapped?
 
