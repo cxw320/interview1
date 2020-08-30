@@ -1,5 +1,10 @@
+import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'dart:async';
+import 'dart:io';
+
+import 'package:audioplayers/audio_cache.dart';
 
 void main() => runApp(MyApp());
 
@@ -107,6 +112,8 @@ class RandomWordsState extends State<RandomWords> {
         color: alreadySaved ? Colors.red : null,
       ),
       onTap: () {
+        final player = AudioCache();
+        player.play('e1Like.wav');
         setState(() {
           //triggers build method
           // if the name is saved remove it, else add it
