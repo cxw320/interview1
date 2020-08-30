@@ -66,9 +66,9 @@ B. Changing requirements:
 - Refactoring: Can we make our code cleaner? How would we make a function that will formatName for us so we can extract it from the main widget
 
 C. Special Feature
-- We want the heart to play a sound when the user presses it. It just so happens that we've already found a dart package that allows playing sounds in Flutter.
+- We want the heart to play a sound when the user presses it. It just so happens that we've already found a dart package that can handle playing audio in Flutter.
 Documentation: [audio_players](https://pub.dev/packages/audioplayers)
-- We already loaded the .wav sound file we would like to play into our pubspec.yaml assets but haven't been able to make the heart play a sound on press. 
+- We already loaded the .wav sound file that we would like to play into our pubspec.yaml assets but haven't been able to make the heart play a sound on press for some reason. 
 - After taking a look at the audio_player api documentation, can we figure out how to make the heart play a sound every time it is tapped?
 
 
