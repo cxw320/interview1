@@ -1,12 +1,3 @@
-# fluttersimtest_app1
-
-This is a basic flutter application that generates word pairs to come up with startup names. 
-As the first step in your interview, we ask that you be able to run this project on both an iOS simulator as well as an Android simulator on your personal computer. 
-You will be asked to show your simulators running this application at the start of your interview before proceeding to the next step.
-
-If you already have your flutter toolchain set up, clone this repo, cd into the project and type the command `flutter run` before the start of your interview and have one or both of your simulators running the application. 
-
-If you don't have a flutter toolchain set up follow step one below. 
 
 ## Step One for Interviewers - Set up a flutter toolchain on your computer. 
 
@@ -30,6 +21,9 @@ VSCode,
 Android Studio
 
 Please be prepared to open the project IN ANY OR ALL of these editors.
+As the first step in your interview, we ask that you be able to run this project on both an iOS simulator as well as an Android simulator on your personal computer. 
+You will be asked to show your simulators running this application at the start of your interview before proceeding to the next step.
+
 
 Part Two of your interivew will be based on a series of questions relating to common problems faced in dart/flutter cross-platform development.
 We will walk through a simple flutter application in real time for Part Two of your interview. 
@@ -46,3 +40,45 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+# Part Two for Interviewers. 
+
+After you have shown the "Test Drive" app running locally to the interviewer, head to github and `git clone` this repo:
+git@github.com:lisa1357mae/simTest.git
+
+cd into the directory and `flutter run` to get the application running on your machine. 
+
+This is a basic flutter application that generates word pairs to come up with startup names. 
+It depends on one dart package that can be found here:
+-[english_words](https://pub.dev/documentation/english_words/latest/index.html)
+
+A. Debugging and fixing errors
+-fix the three errors in the terminal to get the application to build
+
+B. Changing requirements
+- we no longer want pasqual case but instead, we want the two words to be separated with a space in between, how can we separate the words to read "name name" instead of "NameName" ?
+- we now want to add the words "of the" in between the two generated words so that it reads "name of the name", how can we change the string to output like this instead?
+- we want to make sure that the words are being saved to our list correctly, if we go to the saved list does the format match the format on the like page?
+- refactoring: can we make the code cleaner? How would we make a function that will formatName for us so we can extract it from the main widget
+
+C. Special Feature
+- we want the heart to play a sound when the user presses it. It just so happens that we've already found a dart package that allows playing sounds in Flutter.
+-[audio_players](https://pub.dev/packages/audioplayers)
+- we already loaded the .wav sound file we would like to play into our pubspec.yaml assets but haven't been able to make the heart play a sound on press. 
+- after taking a look at the audio_player api documentation, can we figure out how to make the heart play a sound every time it is tapped?
+
+
+
+Other questions: 
+
+Abstract: Thinking through a senerio question (no wrong answer)
+
+Dart specific: 
+
+ObjectiveC specific: 
+
+C++ specific: 
+
+
+
