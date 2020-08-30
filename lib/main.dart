@@ -6,36 +6,35 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-   // final wordPair = WordPair.random();
     return MaterialApp(
-    title: 'Startup Name Generator',
+      title: 'Startup Name Generator',
       theme: ThemeData(
         primaryColor: Colors.purple,
       ),
       home: Scaffold(
-
         body: Center(
-          //child: Text(wordPair.asPascalCase),
-          child:RandomWords(),
+          child: RandomWords(),
         ),
       ),
     );
   }
 }
+
 // create a minimal state class
-class RandomWordsState extends State<RandomWords> { //maintains state for widget
+class RandomWordsState extends State<RandomWords> {
+  //maintains state for widget
   //add suggestions list and font var // stores
   final List<WordPair> _suggestions = <WordPair>[];
-  final Set<WordPair> _saved = Set<WordPair>();   // Add this line.
+  final Set<WordPair> _saved = Set<WordPair>(); 
   final TextStyle _biggerFont = TextStyle(fontSize: 18.0);
-  //add build() method
-
+ 
+ //add build() method
   void _pushSaved() {
     Navigator.of(context).push(
-      MaterialPageRoute<void>(   // Add 20 lines from here...
+      MaterialPageRoute<void>(
         builder: (BuildContext context) {
           final Iterable<ListTile> tiles = _saved.map(
-                (WordPair pair) {
+            (WordPair pair) {
               return ListTile(
                 title: Text(
                   pair.asPascalCase,
@@ -44,12 +43,10 @@ class RandomWordsState extends State<RandomWords> { //maintains state for widget
               );
             },
           );
-          final List<Widget> divided = ListTile
-              .divideTiles(
+          final List<Widget> divided = ListTile.divideTiles(
             context: context,
             tiles: tiles,
-          )
-              .toList();
+          ).toList();
           return Scaffold(
             appBar: AppBar(
               title: Text('Saved Suggestions'),
@@ -66,13 +63,20 @@ class RandomWordsState extends State<RandomWords> { //maintains state for widget
     return Scaffold(
       appBar: AppBar(
         title: Text('Startup Name Generator'),
-        actions: <Widget>[      // Add 3 lines from here...
+        actions: <Widget>[
           IconButton(icon: Icon(Icons.list), onPressed: _pushSaved),
-        ],                      // ... to here.
+        ],
       ),
+      /*    AppBar(
+        title: Text('git clone fluttersimtest_app2'),
+        actions: <Widget>[    
+          IconButton(icon: Icon(Icons.list), onPressed: _pushSaved),
+        ],                 
+      ), */
       body: _buildSuggestions(),
     );
   }
+
   Widget _buildSuggestions() {
     return ListView.builder(
         padding: const EdgeInsets.all(16.0),
@@ -95,27 +99,24 @@ class RandomWordsState extends State<RandomWords> { //maintains state for widget
         style: _biggerFont,
       ),
       trailing: Icon(
-        alreadySaved ? 
-        Icons.favorite 
-        : 
-        Icons.favorite_border,
+        alreadySaved ? Icons.favorite : Icons.favorite_border,
         color: alreadySaved ? Colors.red : null,
       ),
       onTap: () {
-        setState(() { //triggers build method
+        setState(() {
+          //triggers build method
           if (alreadySaved) {
             _saved.remove(pair);
           } else {
             _saved.add(pair);
           }
-            });
+        });
       },
     );
   }
 }
 
-//add stateful RandomWords widget
-
+//stateful RandomWords widget
 class RandomWords extends StatefulWidget {
   @override
   RandomWordsState createState() => RandomWordsState();
