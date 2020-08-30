@@ -1,10 +1,7 @@
 import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
-import 'dart:async';
-import 'dart:io';
 
-import 'package:audioplayers/audio_cache.dart';
 
 void main() => runApp(MyApp());
 
