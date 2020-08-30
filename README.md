@@ -1,7 +1,7 @@
 
 ## Step One for Interviewers - Set up a flutter toolchain on your computer. 
 
-#1: 
+
 In order to set up your flutter toolchain correctly, visit: 
 - [Set up your toolchain](https://flutter.dev/docs/get-started/install)
 
