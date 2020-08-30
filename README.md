@@ -28,19 +28,6 @@ Part Two of your interivew will be based on a series of questions relating to co
 We will walk through a simple flutter application in real time for Part Two of your interview. 
 
 
-## Notes on flutter development 
-
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-
 # Part Two for Interviewers. 
 
 After you have shown the "Test Drive" app running locally to the interviewer, head to [github](https://github.com/lisa1357mae/simTest) and 
