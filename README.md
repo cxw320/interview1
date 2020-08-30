@@ -6,18 +6,17 @@ In order to set up your flutter toolchain correctly, visit:
 - [Set up your toolchain](https://flutter.dev/docs/get-started/install)
 
 - Follow these steps at minimum to get your test application up and running: 
-1. -[Install](https://flutter.dev/docs/get-started/install)
-2. -[Set up an editor](https://flutter.dev/docs/get-started/editor)
-3. -[Test Drive](https://flutter.dev/docs/get-started/test-drive)
+1. [Install](https://flutter.dev/docs/get-started/install)
+2. [Set up an editor](https://flutter.dev/docs/get-started/editor)
+3. [Test Drive](https://flutter.dev/docs/get-started/test-drive)
 
 Have your "Test Drive" application up and running at the start of your interview. It should look like this:
-![Screenshot](file:///Users/lisamae/Desktop/Screen%20Shot%202020-08-30%20at%204.14.43%20PM.png)
 
+![Starter app on iOS](https://flutter.dev/assets/get-started/ios/starter-app-5e284e57b8dce587ea1dfdac7da616e6ec9dc263a409a9a8f99cf836340f47b8.png)
 
-
-For this interview process, you will need to be able to open the project in any or all of the following editors: 
-XCode, 
-VSCode, 
+##For this interview process, you will need to be able to open the project in any or all of the following editors: 
+XCode 
+VSCode 
 Android Studio
 
 Please be prepared to open the project IN ANY OR ALL of these editors.
@@ -44,14 +43,18 @@ samples, guidance on mobile development, and a full API reference.
 
 # Part Two for Interviewers. 
 
-After you have shown the "Test Drive" app running locally to the interviewer, head to github and `git clone` this repo:
-git@github.com:lisa1357mae/simTest.git
+After you have shown the "Test Drive" app running locally to the interviewer, head to [github](https://github.com/lisa1357mae/simTest) and 
+`git clone git@github.com:lisa1357mae/simTest.git` 
 
-cd into the directory and `flutter run` to get the application running on your machine. 
+`cd` into the directory and `flutter run` to get the application running on your machine. 
 
-This is a basic flutter application that generates word pairs to come up with startup names. 
+## About the Application
+
+This is a very basic flutter application that generates word pairs to come up with startup names. 
 It depends on one dart package that can be found here:
 -[english_words](https://pub.dev/documentation/english_words/latest/index.html)
+
+At this stage of your interview, we will go through common issues that arise in flutter cross-platform development and try to solve these problems together to get the application running, change some requirements, refactor some code, and if time allows - add a new feature. 
 
 A. Debugging and fixing errors
 -fix the three errors in the terminal to get the application to build
