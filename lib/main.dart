@@ -20,6 +20,10 @@ class MyApp extends StatelessWidget {
   }
 }
 
+String formatName(WordPair pair) {
+  return pair.first + " of the grand " + pair.second;
+}
+
 // create a minimal state class
 class RandomWordsState extends State<RandomWords> {
   //maintains state for widget
@@ -28,8 +32,8 @@ class RandomWordsState extends State<RandomWords> {
   final Set<WordPair> _saved = Set<WordPair>(); 
   final TextStyle _biggerFont = TextStyle(fontSize: 18.0);
  
- //add build() method
-  void _pushSaved() {
+
+  void _pushSaved() { //function for saving 
     Navigator.of(context).push(
       MaterialPageRoute<void>(
         builder: (BuildContext context) {
@@ -37,7 +41,7 @@ class RandomWordsState extends State<RandomWords> {
             (WordPair pair) {
               return ListTile(
                 title: Text(
-                  pair.asPascalCase,
+                  formatName(pair),
                   style: _biggerFont,
                 ),
               );
@@ -64,7 +68,7 @@ class RandomWordsState extends State<RandomWords> {
       appBar: AppBar(
         title: Text('Startup Name Generator'),
         actions: <Widget>[
-          IconButton(icon: Icon(Icons.list), onPressed: _pushSaved),
+          IconButton(icon: Icon(Icons.list), onPressed: _pushSaved), //a
         ],
       ),
       /*    AppBar(
@@ -80,22 +84,22 @@ class RandomWordsState extends State<RandomWords> {
   Widget _buildSuggestions() {
     return ListView.builder(
         padding: const EdgeInsets.all(16.0),
-        itemBuilder: /*1*/ (context, i) {
-          if (i.isOdd) return Divider(); /*2*/
+        itemBuilder:  (context, i) {  //b
+          if (i.isOdd) return Divider();
 
-          final index = i ~/ 2; /*3*/
+          final index = i ~/ 2;
           if (index >= _suggestions.length) {
-            _suggestions.addAll(generateWordPairs().take(10)); /*4*/
+            _suggestions.addAll(generateWordPairs(maxSyllables: 3).where((p) => syllables(p.first) == 1 && syllables(p.second) == 1).take(10));
           }
           return _buildRow(_suggestions[index]);
         });
   }
 
-  Widget _buildRow(WordPair pair) {
+  Widget _buildRow(WordPair pair) { //look up english words api documentation 
     final bool alreadySaved = _saved.contains(pair);
     return ListTile(
       title: Text(
-        pair.asPascalCase,
+        formatName(pair), //space between 
         style: _biggerFont,
       ),
       trailing: Icon(
@@ -105,10 +109,11 @@ class RandomWordsState extends State<RandomWords> {
       onTap: () {
         setState(() {
           //triggers build method
+          // if the name is saved remove it, else add it
           if (alreadySaved) {
             _saved.remove(pair);
           } else {
-            _saved.add(pair);
+            _saved.add(pair); //c
           }
         });
       },
