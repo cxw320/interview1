@@ -41,7 +41,10 @@ This is a very basic flutter application that generates word pairs to come up wi
 It depends on one dart package that can be found here:
 Documentation: [english_words](https://pub.dev/documentation/english_words/latest/index.html)
 
-At this stage of your interview, we will go through common issues that arise in flutter cross-platform development and try to solve these problems together to get the application running, change some requirements, refactor some code, and if time allows - add a new feature. 
+At this stage of your interview, we will go through common issues that arise in flutter cross-platform development and try to solve these problems together to get the application running, change some requirements, refactor some code, and if time allows - add a new feature.
+
+Here is a gif of what the built app looks like: 
+![startupNames generator](https://flutter.dev/assets/get-started/startup-namer-part-1-9db323d8383da0000c8be4e1a12e3d9ff6ab3a0eb8b86984451b329f1f3b4196.gif)
 
 A. Debugging and fixing errors:
 - Fix the three errors in the terminal to get the application to build

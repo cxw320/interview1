@@ -1,4 +1,5 @@
-import 'package:audioplayers/audio_cache.dart';
+
+//import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 
@@ -22,10 +23,10 @@ class MyApp extends StatelessWidget {
   }
 }
 
-String formatName(WordPair pair) {
+/* String formatName(WordPair pair) { //example function
   return pair.first + " of the grand " + pair.second;
 }
-
+ */
 // create a minimal state class
 class RandomWordsState extends State<RandomWords> {
   //maintains state for widget
@@ -43,7 +44,8 @@ class RandomWordsState extends State<RandomWords> {
             (WordPair pair) {
               return ListTile(
                 title: Text(
-                  formatName(pair),
+                   pair.asPascalCase,
+                 // formatName(pair), //example refactor
                   style: _biggerFont,
                 ),
               );
@@ -70,15 +72,10 @@ class RandomWordsState extends State<RandomWords> {
       appBar: AppBar(
         title: Text('Startup Name Generator'),
         actions: <Widget>[
-          IconButton(icon: Icon(Icons.list), onPressed: _pushSaved), //a
+          IconButton(icon: Icon(Icons.list), onPressed: _pushSaved), //A bug
         ],
       ),
-      /*    AppBar(
-        title: Text('git clone fluttersimtest_app2'),
-        actions: <Widget>[    
-          IconButton(icon: Icon(Icons.list), onPressed: _pushSaved),
-        ],                 
-      ), */
+    
       body: _buildSuggestions(),
     );
   }
@@ -86,12 +83,13 @@ class RandomWordsState extends State<RandomWords> {
   Widget _buildSuggestions() {
     return ListView.builder(
         padding: const EdgeInsets.all(16.0),
-        itemBuilder:  (context, i) {  //b
+        itemBuilder:  (context, i) {  //B bug
           if (i.isOdd) return Divider();
 
           final index = i ~/ 2;
           if (index >= _suggestions.length) {
-            _suggestions.addAll(generateWordPairs(maxSyllables: 3).where((p) => syllables(p.first) == 1 && syllables(p.second) == 1).take(10));
+            _suggestions.addAll(generateWordPairs().take(10));
+         //   _suggestions.addAll(generateWordPairs(maxSyllables: 3).where((p) => syllables(p.first) == 1 && syllables(p.second) == 1).take(10)); //example refactor 
           }
           return _buildRow(_suggestions[index]);
         });
@@ -101,7 +99,8 @@ class RandomWordsState extends State<RandomWords> {
     final bool alreadySaved = _saved.contains(pair);
     return ListTile(
       title: Text(
-        formatName(pair), //space between 
+         pair.asPascalCase,
+       // formatName(pair), //rexample refactor
         style: _biggerFont,
       ),
       trailing: Icon(
@@ -109,15 +108,15 @@ class RandomWordsState extends State<RandomWords> {
         color: alreadySaved ? Colors.red : null,
       ),
       onTap: () {
-        final player = AudioCache();
-        player.play('e1Like.wav');
+      /*   final player = AudioCache(); //TODO: finish makeing this play a sound on tap
+        player.play('e1Like.wav'); */
         setState(() {
           //triggers build method
           // if the name is saved remove it, else add it
           if (alreadySaved) {
             _saved.remove(pair);
           } else {
-            _saved.add(pair); //c
+            _saved.add(pair); //C bug
           }
         });
       },
@@ -130,3 +129,4 @@ class RandomWords extends StatefulWidget {
   @override
   RandomWordsState createState() => RandomWordsState();
 }
+
