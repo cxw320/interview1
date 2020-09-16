@@ -63,15 +63,29 @@ Documentation: [audio_players](https://pub.dev/packages/audioplayers)
 
 
 
-Other questions: 
+## Other questions: 
 
-Abstract: Thinking through a senerio question (no wrong answer)
+Abstract/Problem Solving/Role Play: Thinking through a senerio question (no wrong answer) 
+You are given instructions by your boss to stop at a warehouse on your way to work to pick up a package. 
+The information he gives you is as follows: 
+Go to the warehouse to pick up my package. It will be a blue warehouse at 111 star drive, Albany NY 10005. When you pull up, you should see a door at the front of the building. The door should be unlocked so just enter and you'll see the packagage sitting at a desk when you enter. It will have my name on it "Boss", so just grab it and bring it on your way to work. Please try to have it here before our 10am meeting. 
 
 Dart specific: 
 
-ObjectiveC specific: 
+Objective-C specific: 
 
-C++ specific: 
+## 1. What are the CPU architectures supported by iOS devices?
+Armv7s supported from iPhone 5, 5c, 5S, iPod touch-5, iPad-4, iPad Air. that’s nothing but based on processor. Armv7s designed for A6 processor. Supporting from IOS6+. It’s also support for 64-bit coding but processing get slow in those devices with armv7s instruction set.
+Same as, Arm64 devices are from Iphone 5s, iPad Air. That’s related to A7 Processor. Best advantage of these device is 64-bit support.
 
+## 2. Can I write some C++ function in same .m file? Will it compile? If no, what changes should I do to compile it?
+The easiest solution is to simply tell Xcode to compile everything as Objective C++.
+Set your project or target settings for Compile Sources As to Objective C++ and recompile.
+Then you can use C++ or Objective C everywhere.
 
+## 3.What are the types of iOS binaries you can create using XCode? (.app, .ipa, .a, .framework)
+you can create .app,.ipa,.a and .framework
 
+## 4. Can a static library (.a) contain resources like images, sound files etc?
+NO, You can’t provide anything other than code with a static library. This is because .a files are a simple archive of object files, with the added ability under Mac/iOS of supporting multiple CPU architectures.
+The only option you have is to create a Framework, which can provide code as well as other resources.
