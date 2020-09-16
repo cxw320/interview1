@@ -71,7 +71,7 @@ The information he gives you is as follows:
 Go to the warehouse to pick up my package. It will be a blue warehouse at 111 star drive, Albany NY 10005. When you pull up, you should see a door at the front of the building. The door should be unlocked so just enter and you'll see the packagage sitting at a desk when you enter. It will have my name on it "Boss", so just grab it and bring it on your way to work. Please try to have it here before our 10am meeting. 
 - You get to the building, walk up to the front door and it's locked. What do you do?
 
-Dart/Flutter Specific: 
+## Dart/Flutter Specific
 
 ## What’s a ‘Future’ in Dart?
 It’s used for asynchronous programming. A Future represents a potential value (or error) that’ll be available at some time in the future.
@@ -109,7 +109,7 @@ Dart is an object-oriented, garbage-collected programming language that you use 
 	•	They are inspired from components in React.
 	•	Widgets are important in Flutter because everything within a Flutter application is a Widget , from a simple “Text” to “Buttons” to “Screen Layouts”.
 
-Objective-C Specific: 
+## Objective-C Specific: 
 
 ## 1. What are the CPU architectures supported by iOS devices?
 Armv7s supported from iPhone 5, 5c, 5S, iPod touch-5, iPad-4, iPad Air. that’s nothing but based on processor. Armv7s designed for A6 processor. Supporting from IOS6+. It’s also support for 64-bit coding but processing get slow in those devices with armv7s instruction set.
@@ -128,7 +128,7 @@ NO, You can’t provide anything other than code with a static library. This is 
 The only option you have is to create a Framework, which can provide code as well as other resources.
 
 
-Android Specific: 
+## Android Specific: 
 
 ## What is ADB in Android? 
 
