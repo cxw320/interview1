@@ -31,7 +31,7 @@ We will walk through a simple flutter application in real time for Part Two of y
 # Part Two for Interviewers. 
 
 After you have shown the "Test Drive" app running locally to the interviewer, head to [github](https://github.com/lisa1357mae/simTest) and 
-`git clone git@github.com:lisa1357mae/simTest.git` 
+`git clone git@github.com:lisa1357mae/simTest.git` //TODO: update this to new splice repo
 
 `cd` into the directory and `flutter run` to get the application running on your machine. 
 
