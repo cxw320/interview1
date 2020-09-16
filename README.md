@@ -47,7 +47,7 @@ Here is a gif of what the built app looks like:
 ![startupNames generator](https://flutter.dev/assets/get-started/startup-namer-part-1-9db323d8383da0000c8be4e1a12e3d9ff6ab3a0eb8b86984451b329f1f3b4196.gif)
 
 
-###### Grading Matrix for Debugging 6 points total) 
+###### Grading Matrix for Debugging 6 points total
  * 2 points for each bug that is fixed without help from interviwer
  * 1 point for bugs that are fixed with minor hints from interviwer
  * 0 points for bugs that cannot be fixed without interviewer fixing it
@@ -55,7 +55,7 @@ Here is a gif of what the built app looks like:
 **A. Debugging and fixing errors:**
 - Fix the three errors in the terminal to get the application to build
 
-###### Grading Matrix for Changing requirements 8 points total) 
+###### Grading Matrix for Changing requirements 8 points total
  * 2 points for each requiremnt that is refactored in an acceptable way
  * 1 point for each requiremnt that is refactored with minor help from interviwer
  * 0 points for a requirement that cannot be changed without the interviewer refactoring it
@@ -66,7 +66,7 @@ Here is a gif of what the built app looks like:
 - We want to make sure that the words are being saved to our list correctly, if we go to the saved list does the format match the format on the like page?
 - Refactoring: Can we make our code cleaner? How would we make a function that will formatName for us so we can extract it from the main widget
 
-###### Grading Matrix for Special Feature 6 points total)
+###### Grading Matrix for Special Feature 6 points total
 * 2 points for knowing what the problem could be
 * 2 points for knowing where to fix the problem
 * 2 points for sloving and implementing the solution to get the sound to play
