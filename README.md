@@ -65,10 +65,11 @@ Documentation: [audio_players](https://pub.dev/packages/audioplayers)
 
 ## Other questions: 
 
-Abstract/Problem Solving/Role Play: Thinking through a senerio question (no wrong answer) 
+## Abstract/Problem Solving/Role Play: Thinking through a senerio together question (no wrong answer) (idea is to see how the interviewer solves problems abstractly if things don't go as originally planned)
 You are given instructions by your boss to stop at a warehouse on your way to work to pick up a package. 
 The information he gives you is as follows: 
 Go to the warehouse to pick up my package. It will be a blue warehouse at 111 star drive, Albany NY 10005. When you pull up, you should see a door at the front of the building. The door should be unlocked so just enter and you'll see the packagage sitting at a desk when you enter. It will have my name on it "Boss", so just grab it and bring it on your way to work. Please try to have it here before our 10am meeting. 
+- You get to the building, walk up to the front door and it's locked. What do you do?
 
 Dart/Flutter Specific: 
 
