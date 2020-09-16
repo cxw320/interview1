@@ -70,9 +70,45 @@ You are given instructions by your boss to stop at a warehouse on your way to wo
 The information he gives you is as follows: 
 Go to the warehouse to pick up my package. It will be a blue warehouse at 111 star drive, Albany NY 10005. When you pull up, you should see a door at the front of the building. The door should be unlocked so just enter and you'll see the packagage sitting at a desk when you enter. It will have my name on it "Boss", so just grab it and bring it on your way to work. Please try to have it here before our 10am meeting. 
 
-Dart specific: 
+Dart/Flutter Specific: 
 
-Objective-C specific: 
+## What’s a ‘Future’ in Dart?
+It’s used for asynchronous programming. A Future represents a potential value (or error) that’ll be available at some time in the future.
+Receivers of a Future can register callbacks that handle the value or error once it’s available.
+What are the 'async’ and 'await’ keywords for?
+These are keywords that make asynchronous programming much easier to use and read.
+We can use those instead of writing a then callback on Future objects.
+
+
+## What is Context in flutter ?
+
+Context is a handle to the location of the widget in the widget tree. It is a BuildContext instance that gets passed to the builder of a widget in order to know where it is inside the widget tree. It is nothing but a reference to the location of a Widget within the tree structure of all the built widgets.
+
+
+
+## Differentiate StatelessWidget and StatefulWidget?
+
+Stateless: Widget state creates ONLY ONCE, then it can update values but not state explicitly. That's why it has only one class which extends with StatelessWidget. They can never re-run build() method again.
+
+Stateful: Widgets can update their STATE (locally) & values multiple times upon event triggered. That's the reason, the implementation is also different. In this, we have 2 classes, one is StatefulWidget & the other is it's State implementation handler i.e. State<YourWidget>. So if I say, they can re-run build() method again & again based on events triggered.
+	•	A StatelessWidget will never rebuild by itself (but can from external events). A StatefulWidget can.
+	•	A StatelessWidget is static wheres a StatefulWidget is dynamic.
+
+
+## What is Dart and why does Flutter use it?
+Dart is an object-oriented, garbage-collected programming language that you use to develop Flutter apps. It was also created by Google, but is open-source, and has community inside and outside Google. Dart was chosen as the language of Flutter for the following reason: 
+	•	Dart is AOT (Ahead Of Time) compiled to fast, predictable, native code, which allows almost all of Flutter to be written in Dart. This not only makes Flutter fast, virtually everything (including all the widgets) can be customized.
+	•	Dart can also be JIT (Just In Time) compiled for exceptionally fast development cycles and game-changing workflow (including Flutter’s popular sub-second stateful hot reload).
+	•	Dart allows Flutter to avoid the need for a separate declarative layout language like JSX or XML, or separate visual interface builders, because Dart’s declarative, programmatic layout is easy to read and visualize. And with all the layout in one language and in one place, it is easy for Flutter to provide advanced tooling that makes layout a snap.
+
+
+## What is a "widget" and mention its importance in Flutter?
+	•	Widgets are basically the UI components in Flutter.
+	•	It is a way to describe the configuration of an Element.
+	•	They are inspired from components in React.
+	•	Widgets are important in Flutter because everything within a Flutter application is a Widget , from a simple “Text” to “Buttons” to “Screen Layouts”.
+
+Objective-C Specific: 
 
 ## 1. What are the CPU architectures supported by iOS devices?
 Armv7s supported from iPhone 5, 5c, 5S, iPod touch-5, iPad-4, iPad Air. that’s nothing but based on processor. Armv7s designed for A6 processor. Supporting from IOS6+. It’s also support for 64-bit coding but processing get slow in those devices with armv7s instruction set.
@@ -107,3 +143,8 @@ It is a client-server program that includes three components:
 ## What is the Android SDK?
 Answer: To develop a mobile application, Android developers require some tools and this requirement is satisfied by “Android SDK” which is a set of tools that are used for developing or writing apps.
 It has a Graphical User Interface that emulates the Android environment. This emulator acts like an actual mobile device on which the developers write their code and then debug/test the same code to check if anything is wrong.
+
+
+## Can Android applications only be programmed in Java?
+
+No, not necessarily. We can program Android apps using the Native Development Kit (NDK) in C/C++. The NDK is a toolset that allows us to implement parts of our app using native code languages such as C and C++. Typically, good use cases for NDK are CPU-intensive applications such as game engines, signal processing, and physics simulation.
