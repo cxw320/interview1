@@ -47,32 +47,31 @@ Here is a gif of what the built app looks like:
 ![startupNames generator](https://flutter.dev/assets/get-started/startup-namer-part-1-9db323d8383da0000c8be4e1a12e3d9ff6ab3a0eb8b86984451b329f1f3b4196.gif)
 
 
-//TODO: Put the other questions in second repo for Splice employee interviewer?
-(Grading Matrix for Debugging 6 points total) 
+# Grading Matrix for Debugging 6 points total) 
  2 points for each bug that is fixed without help from interviwer
  1 point for bugs that are fixed with minor hints from interviwer
  0 points for bugs that cannot be fixed without interviewer fixing it
 
-A. Debugging and fixing errors:
+**A. Debugging and fixing errors:**
 - Fix the three errors in the terminal to get the application to build
 
-(Grading Matrix for Changing requirements 8 points total) 
+# Grading Matrix for Changing requirements 8 points total) 
  2 points for each requiremnt that is refactored in an acceptable way
  1 point for each requiremnt that is refactored with minor help from interviwer
  0 points for a requirement that cannot be changed without the interviewer refactoring it
 
-B. Changing requirements:
+**B. Changing requirements:**
 - We no longer want pasqual case but instead, we want the two words to be separated with a space in between, how can we separate the words to read "name name" instead of "NameName" ?
 - We now want to add the words "of the" in between the two generated words so that it reads "name of the name", how can we change the string to output like this instead?
 - We want to make sure that the words are being saved to our list correctly, if we go to the saved list does the format match the format on the like page?
 - Refactoring: Can we make our code cleaner? How would we make a function that will formatName for us so we can extract it from the main widget
 
-(Grading Matrix for Special Feature 6 points total)
+# Grading Matrix for Special Feature 6 points total)
 2 points for knowing what the problem could be
 2 points for knowing where to fix the problem
 2 points for sloving and implementing the solution to get the sound to play
 
-C. Special Feature
+**C. Special Feature**
 - We want the heart to play a sound when the user presses it. It just so happens that we've already found a dart package that can handle playing audio in Flutter.
 Documentation: [audio_players](https://pub.dev/packages/audioplayers)
 - We already loaded the .wav sound file that we would like to play into our pubspec.yaml assets but haven't been able to make the heart play a sound on press for some reason. 
@@ -81,12 +80,16 @@ Documentation: [audio_players](https://pub.dev/packages/audioplayers)
 
 
 **Other questions (If time allows, pick one questions from each category and have the interviewer answer):** 
-Grading Matrix for "other" questions
-(1-5)
+# Grading Matrix for "other" questions(1-5)
+
 1 - Does not have a basic understanding of what is being asked or makes up an answer that does not make sense
+
 2 - Has an understanding of the question but cannot give a clear answer
+
 3,4 - Has a good understanding of the question and answers some or most of it correctly
+
 5 - Has a very good understading of the queston, answers most or all of the points correctly and is able to easily elaborate when prompted
+
 
 ## Abstract/Problem Solving/Role Play: Thinking through a senerio together question (no wrong answer) (idea is to see how the interviewer solves problems abstractly if things don't go as originally planned)
 You are given instructions by your boss to stop at a warehouse on your way to work to pick up a package. 
