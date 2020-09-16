@@ -89,3 +89,21 @@ you can create .app,.ipa,.a and .framework
 ## 4. Can a static library (.a) contain resources like images, sound files etc?
 NO, You can’t provide anything other than code with a static library. This is because .a files are a simple archive of object files, with the added ability under Mac/iOS of supporting multiple CPU architectures.
 The only option you have is to create a Framework, which can provide code as well as other resources.
+
+
+Android Specific: 
+
+## What is ADB in Android? 
+
+It is acts as bridge between emulator and IDE, it executes remote shell commands to run applications on an emulator
+
+ADB stands for Android Debug Bridge. It is a command line tool that is used to communicate with the emulator instance. ADB can control your device over USB from a computer, copy files back and forth, install and uninstall apps, run shell commands, and more.
+It is a client-server program that includes three components:
+• Client – which runs on your development machine. You can invoke a client from a shell by issuing an ADB command. Other Android tools such as DDMS also create ADB clients.
+• Server, which runs as a background process on your development machine. The server manages communication between the client and the ADB daemon running on an emulator or device.
+• Daemon, which runs as a background process on each emulator or device instance.
+
+
+## What is the Android SDK?
+Answer: To develop a mobile application, Android developers require some tools and this requirement is satisfied by “Android SDK” which is a set of tools that are used for developing or writing apps.
+It has a Graphical User Interface that emulates the Android environment. This emulator acts like an actual mobile device on which the developers write their code and then debug/test the same code to check if anything is wrong.
