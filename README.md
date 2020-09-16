@@ -46,6 +46,8 @@ At this stage of your interview, we will go through common issues that arise in 
 Here is a gif of what the built app looks like: 
 ![startupNames generator](https://flutter.dev/assets/get-started/startup-namer-part-1-9db323d8383da0000c8be4e1a12e3d9ff6ab3a0eb8b86984451b329f1f3b4196.gif)
 
+
+//TODO: Put the other questions in second repo for Splice employee interviewer?
 A. Debugging and fixing errors:
 - Fix the three errors in the terminal to get the application to build
 
