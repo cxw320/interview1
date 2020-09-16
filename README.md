@@ -63,7 +63,7 @@ Documentation: [audio_players](https://pub.dev/packages/audioplayers)
 
 
 
-## Other questions: 
+## Other questions (If time allows, pick one questions from each category and have the interviewer answer): 
 
 ## Abstract/Problem Solving/Role Play: Thinking through a senerio together question (no wrong answer) (idea is to see how the interviewer solves problems abstractly if things don't go as originally planned)
 You are given instructions by your boss to stop at a warehouse on your way to work to pick up a package. 
