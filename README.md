@@ -26,11 +26,3 @@ You will be asked to show your simulators running this application at the start 
 
 Part Two of your interivew will be based on a series of questions relating to common problems faced in Dart/Flutter Cross-Platform development.
 We will walk through a simple flutter application in real time for Part Two of your interview. 
-
-
-# Part Two.
-
-After you have shown the "Test Drive" app running locally to the interviewer, head to [github](https://github.com/splice/mobile-interview-part-2) and 
-`git clone git@github.com:splice/mobile-interview-part-2.git`
-
-`cd` into the directory and `flutter run` to get the application running on your machine.
