@@ -10,9 +10,8 @@ In order to set up your flutter toolchain correctly, visit:
 2. [Set up an editor](https://flutter.dev/docs/get-started/editor)
 3. [Test Drive](https://flutter.dev/docs/get-started/test-drive)
 
-Have your "Test Drive" application up and running at the start of your interview. It should look like this:
+Have your "Test Drive" application up and running at the start of your interview.
 
-![Starter app on iOS](https://flutter.dev/assets/get-started/ios/starter-app-5e284e57b8dce587ea1dfdac7da616e6ec9dc263a409a9a8f99cf836340f47b8.png)
 
 ## For this interview process, you will need to be able to open the project in any or all of the following editors: 
 - Xcode 
