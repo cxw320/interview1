@@ -15,14 +15,17 @@ Have your "Test Drive" application up and running at the start of your interview
 ![Starter app on iOS](https://flutter.dev/assets/get-started/ios/starter-app-5e284e57b8dce587ea1dfdac7da616e6ec9dc263a409a9a8f99cf836340f47b8.png)
 
 ## For this interview process, you will need to be able to open the project in any or all of the following editors: 
-- XCode 
-- VSCode 
+- Xcode 
+- Visual Studio Code 
 - Android Studio
 
-Please be prepared to open the project IN ANY OR ALL of these editors.
+
+Please be prepared to open the project IN ANY AND ALL of these editors.
+
 As the first step in your interview, we ask that you be able to run this project on both an iOS simulator as well as an Android simulator on your personal computer. 
 You will be asked to show your simulators running this application at the start of your interview before proceeding to the next step.
 
 
-Part Two of your interivew will be based on a series of questions relating to common problems faced in Dart/Flutter Cross-Platform development.
-We will walk through a simple flutter application in real time for Part Two of your interview. 
+Part Two of your interivew will be based on a series of questions relating to common problems faced in Dart/Flutter Cross-Platform development. Please be prepared to fetch a new git repo during your interview. In order to do this you will need to have an active Github account that allows for cloning repos to your local machine. We will clone a repo and discuss common issues and solve problems together. 
+
+
