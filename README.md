@@ -30,17 +30,17 @@ As the first step in your interview, we ask that you be able to run this project
 You will be asked to show your simulators running this application at the start of your interview before proceeding to the next step.
 
 
-Part Two of your interivew will be based on a series of questions relating to common problems faced in Dart/Flutter Cross-Platform development. 
+Part Two of your interivew will be based on a series of questions relating to common problems faced in Dart/Flutter Cross-Platform development. You will be required to screen share. 
 
 Important: Please be prepared to fetch a new git repo during your interview. 
 
-You should have been asked to provide your github username to the splice hiring team prior to your technical interview. If you have not, please provide it to the hiring team before the day of your interview in order to collaborate on the day of your live interview. 
+You should have been asked to provide your Github username to the splice hiring team prior to your technical interview. If you have not, please provide it to the hiring team before the day of your interview in order to collaborate on the day of your live interview. 
 
 You will need an active Github account that allows for cloning repos to your local machine. We will clone a repo and discuss common issues and solve problems together. 
 
-Please be sure that your account is set up to collaborate with others BEFORE the interview begins. 
+Please be sure that your Github account is set up to collaborate with others BEFORE the interview begins. 
 
-Good luck! We look foward to collaborating with you : )
+Good luck! Our Splice Team is exicted to collaborate with you : )
 
 
 
