@@ -13,8 +13,7 @@ In order to set up your flutter toolchain correctly, visit:
 3. [Test Drive](https://flutter.dev/docs/get-started/test-drive)
 
 Have your "Test Drive" application up and running at the start of your interview. It should look like this: 
-
-![alt text](https://flutter.dev/assets/images/docs/get-started/ios/starter-app.png)
+![alt text](https://docs.flutter.dev/assets/images/docs/get-started/ios/starter-app.png)
 
 
 ## For this interview process, you will need to be able to open the project in any or all of the following editors: 
